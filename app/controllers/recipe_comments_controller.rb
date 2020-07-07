@@ -2,7 +2,7 @@ class RecipeCommentsController < ApplicationController
   before_action :set_recipe_comment, only: [:show, :update, :destroy]
   before_action :authorize_request, except: %i[index show]
 
-  # GET /recipe_comments
+  # GET /recipe_comment
   def index
     @recipe_comments = RecipeComment.all
 
